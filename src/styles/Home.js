@@ -71,3 +71,16 @@ export const Ul = styled.ul`
     width: 12rem;
   }
 `;
+
+
+export const Ol = styled.ol`
+  background-color: #232323;
+  box-shadow: 0px 0px 12px 0px rgba(250, 250, 250, .87);
+  width: 500px;
+  height: 500px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+`;
