@@ -105,17 +105,17 @@ export default function Home() {
       )}
       {toggle && (
         <Ol>
-          <h2>Habilidades</h2>
-          {selectedPokemon.map((ability, index) => (
-            <li key={index}>{ability}</li>
-          ))}
           <button
             onClick={() => {
               toggleAbilitie();
             }}
           >
-            Fechar
+            X
           </button>
+          <h2>Habilidades</h2>
+          {selectedPokemon.map((ability, index) => (
+            <li key={index}>{ability}</li>
+          ))}
         </Ol>
       )}
     </Wrapper>

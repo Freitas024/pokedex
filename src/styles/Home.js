@@ -75,12 +75,57 @@ export const Ul = styled.ul`
 
 export const Ol = styled.ol`
   background-color: #232323;
-  box-shadow: 0px 0px 12px 0px rgba(250, 250, 250, .87);
+  box-shadow: 0px 0px 6px 0px #7d3f98;
   width: 500px;
-  height: 500px;
+  height: 300px;
 
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  button {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 24px 0px 0px 400px;
+
+    background-color: #232323;
+    color: #7d3f98;
+    font-weight: 800;
+    font-size: large;
+    border: 3px solid #7d3f98;
+    border-radius: 6px;
+
+    cursor: pointer;
+  }
+
+  h2 {
+    font-size: large;
+    font-weight: 700;
+
+    position: relative;
+    top: -90px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li {
+    list-style-type: none;
+    font-size: medium;
+    font-weight: 600;
+    position: relative;
+    top: -100px;
+
+    width: 70%;
+    margin: 12px 0px;
+    display: flex;
+    justify-content: start;
+  }
 `;
